@@ -1,6 +1,7 @@
 import React from 'react';
 import Slider from 'react-slick';
 import Link from 'next/link';
+import '../../public/images/slider/slide-5.jpg';
 
 const Hero = (props) => {
   var settings = {
