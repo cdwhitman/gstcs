@@ -26,7 +26,7 @@ const HomePage = () => {
       <ContactForm />
       <Testimonial />
       <Team />
-      <Consultinencey />
+      {/* <Consultinencey /> */}
       <Footer />
       <Scrollbar />
     </Fragment>
