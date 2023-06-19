@@ -14,11 +14,11 @@ class Header extends Component {
     isCartShow: false
   };
 
-  searchHandler = () => {
-    this.setState({
-      isSearchShow: !this.state.isSearchShow
-    });
-  };
+  // searchHandler = () => {
+  //   this.setState({
+  //     isSearchShow: !this.state.isSearchShow
+  //   });
+  // };
   cartHandler = () => {
     this.setState({
       isCartShow: !this.state.isCartShow
@@ -40,7 +40,7 @@ class Header extends Component {
 
     return (
       <header id='header' className={this.props.topbarNone}>
-        <HeaderTopbar />
+        {/* <HeaderTopbar /> */}
         <div className={`wpo-site-header ${this.props.hclass}`}>
           <nav className='navigation navbar navbar-expand-lg navbar-light'>
             <div className='container-fluid'>
@@ -56,7 +56,9 @@ class Header extends Component {
                       onClick={ClickHandler}
                       className='navbar-brand'
                       href='/'>
-                      <Image src={this.props.Logo} alt='' />
+                      <h1 style={{ color: 'white' }}>Global DynamiX</h1>
+                      {/* temp */}
+                      {/* <Image src={this.props.Logo} alt='' /> */}
                     </Link>
                   </div>
                 </div>
@@ -112,14 +114,14 @@ class Header extends Component {
                   <div className='header-right'>
                     <div className='header-search-form-wrapper'>
                       <div className='cart-search-contact'>
-                        <button
+                        {/* <button
                           onClick={this.searchHandler}
                           className='search-toggle-btn'>
                           <i
                             className={`${
                               isSearchShow ? 'ti-close' : 'ti-search'
                             }`}></i>
-                        </button>
+                        </button> */}
                         <div
                           className={`header-search-form ${
                             isSearchShow ? 'header-search-content-toggle' : ''

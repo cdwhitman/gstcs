@@ -27,7 +27,7 @@ const HomePage3 = () => {
       <Practice2 />
       <CaseStudies />
       <Testimonial />
-      <Team />
+      {/* <Team /> */}
       <Consultinencey />
       <BlogSection />
       <Footer />

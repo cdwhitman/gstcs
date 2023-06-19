@@ -20,7 +20,7 @@ const TeamMember = (props) => {
         <div className='row align-items-center'>
           <div className='col-lg-5'>
             <div className='wpo-section-title'>
-              <h2>Meet Our Talented & Qualified Team</h2>
+              <h2>Meet Our Qualified Team</h2>
             </div>
           </div>
           <div className='col-lg-5 offset-lg-2'>
@@ -40,11 +40,11 @@ const TeamMember = (props) => {
                 <div className='wpo-team-item'>
                   <div className='wpo-team-img'>
                     <Image src={team.AtImg} alt='' />
-                    <div
+                    {/* <div
                       className={`social ${
                         isActive === team.Id ? 'active' : ''
                       }`}>
-                      <ul>
+                      {/* <ul>
                         <li
                           className='switch'
                           onClick={() => toggleClass(team.Id)}>
@@ -65,8 +65,8 @@ const TeamMember = (props) => {
                             <i className='ti-instagram'></i>
                           </Link>
                         </li>
-                      </ul>
-                    </div>
+                      </ul> 
+                    </div> }*/}
                   </div>
                   <div className='wpo-team-text'>
                     <h2>

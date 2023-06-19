@@ -26,8 +26,14 @@ const ContactForm = () => {
 
   const submitHandler = (e) => {
     e.preventDefault();
+    console.log(forms);
     if (validator.allValid()) {
       validator.hideMessages();
+      fetch('https://formspree.io/f/mknyblvq', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(forms)
+      });
       setForms({
         name: '',
         email: '',
@@ -49,7 +55,7 @@ const ContactForm = () => {
               <div className='wpo-contact-form-area'>
                 <h2>Get In Touch</h2>
                 <form
-                  onSubmit={(e) => submitHandler(e)}
+                  onSubmit={submitHandler}
                   className='contact-validation-active'>
                   <div className='row'>
                     <div className='form-field'>
@@ -130,10 +136,10 @@ const ContactForm = () => {
                 </h2>
                 <div className='wpo-contact-content-inner'>
                   <p>
-                    Global Strategic Trade Compliance Solutions is... Contrary
-                    to popular belief, Lorem Ipsum is not simply random text. It
-                    has roots in a piece of classNameical Latin literature from
-                    45 BC, making it over 2000 years old.
+                    Global DynamiX is... Contrary to popular belief, Lorem Ipsum
+                    is not simply random text. It has roots in a piece of
+                    classNameical Latin literature from 45 BC, making it over
+                    2000 years old.
                   </p>
                   <p>
                     and going through the cites of the word in classNameical
@@ -141,8 +147,9 @@ const ContactForm = () => {
                     comes from sections.
                   </p>
                   <div className='signeture'>
-                    <h4>Doug Whitman</h4>
-                    <p>Global Strategic Trade Compliance Solutions, CEO</p>
+                    <h4>Global DynamiX</h4>
+                    {/* Doug Whitman
+                    <p>Global DynamiX</p> */}
                     <span>
                       <img src={cimg} alt='' />
                     </span>

@@ -35,25 +35,16 @@ const TeamSinglePage = (props) => {
                   <h2>{TeamSingle?.name}</h2>
                   <ul>
                     <li>
-                      Position: <span>Siniour Lawyer</span>
+                      Position: <span>{TeamSingle?.title}</span>
                     </li>
                     <li>
-                      Practice Area:<span>{TeamSingle?.title}</span>
+                      Experience:<span>{TeamSingle?.experiance}</span>
                     </li>
                     <li>
-                      Experience:<span>12 Years</span>
+                      Phone:<span>{TeamSingle?.phone}</span>
                     </li>
                     <li>
-                      Address:<span>Millington, Ave, TN 38053</span>
-                    </li>
-                    <li>
-                      Phone:<span>+00 568 746 987</span>
-                    </li>
-                    <li>
-                      Email:<span>youremail@gstcs.com</span>
-                    </li>
-                    <li>
-                      Fax:<span>568 746 987</span>
+                      Email:<span>{TeamSingle?.email}</span>
                     </li>
                   </ul>
                 </div>
@@ -65,25 +56,9 @@ const TeamSinglePage = (props) => {
               <div className='col-lg-12'>
                 <div className='exprience-wrap'>
                   <h2>Personal Experience</h2>
-                  <p>
-                    The purpose of lorem ipsum is to create a natural looking
-                    block oftext (sentence, paragraph, page, etc.) that doesn't
-                    distract from thelayout. A practice not without controversy,
-                    laying out pages withmeaningless filler text can be very
-                    useful when the focus is meantto be on design, not
-                    content.There are many variations of passages of Lorem Ipsum
-                    available.
-                  </p>
-                  <p>
-                    But the majority have suffered alteration in some form, by
-                    injected humour, or randomised words which don’t look even
-                    slightly believable. If you are going to use a passage of
-                    Lorem Ipsum, you need to be sure there isn’t anything
-                    embarrassing hidden in the middle of text generators on the
-                    Internet tend to repeat.
-                  </p>
+                  <p>{TeamSingle?.about}</p>
                 </div>
-                <div className='at-progress'>
+                {/* <div className='at-progress'>
                   <div className='row'>
                     <div className='col-lg-3 col-md-6 col-sm-6 col-xs-12 custom-grid'>
                       <div className='progress yellow'>
@@ -142,7 +117,7 @@ const TeamSinglePage = (props) => {
                       </div>
                     </div>
                   </div>
-                </div>
+                </div> */}
                 <div className='education-area ex-wiget'>
                   <h2>Education</h2>
                   <ul>
@@ -151,23 +126,29 @@ const TeamSinglePage = (props) => {
                       available, but the majority have suffered alteration in
                       some form, by injected humour.
                     </li>
-                    <li>If you are going to use a passage of Lorem Ipsum.</li>
-                    <li>Very popular during the Renaissance. </li>
+                    <li>imperdiet semper elit quis malesuada</li>
                     <li>
-                      Many desktop publishing packages and web page editors now.
+                      {' '}
+                      risus turpis ultrices dolor, non dignissim mauris lectus
+                      et ligula. In hac habitasse platea dictumst. Sed eu
+                      suscipit turpis, placerat fringilla risus{' '}
+                    </li>
+                    <li>
+                      Pellentesque elementum orci quam, nec malesuada lectus
+                      ultrices eu.
                     </li>
                   </ul>
                 </div>
-                <div className='language-area ex-wiget'>
+                {/* <div className='language-area ex-wiget'>
                   <h2>Language</h2>
                   <ul>
                     <li>French(fluent), English (fluent), Greek , chinese.</li>
                   </ul>
-                </div>
+                </div> */}
                 <div className='wpo-contact-area ex-wiget'>
                   <h2>Contact Me</h2>
                   <div className='quote-form'>
-                    <form onSubmit={SubmitHandler}>
+                    <form onSubmit={SubmitHandler} id={TeamSingle?.formId}>
                       <div className='form-group half-col'>
                         <input
                           type='text'

@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
-import abimg from '/public/images/doug-profile.jpg';
+import abimg from '/public/images/consult.png';
 import sign from '/public/images/signeture.png';
 
 const About = (props) => {
@@ -21,49 +21,66 @@ const About = (props) => {
                 </div>
                 <div className='wpo-about-content-inner'>
                   <p>
-                    Doug Whitman is a seasoned professional with over 26 years
-                    of experience leading global trade compliance teams for
-                    major corporations. Dale brings extensive knowledge and
-                    expertise to our consulting practice, allowing us to deliver
-                    exceptional value to our clients.
+                    Sed scelerisque quam sed ante pulvinar hendrerit. Nam
+                    fermentum et elit vitae feugiat. Quisque tincidunt hendrerit
+                    augue eget vulputate. Morbi blandit, elit eu ultrices
+                    rutrum, risus turpis ultrices dolor, non dignissim mauris
+                    lectus et ligula. In hac habitasse platea dictumst. Sed eu
+                    suscipit turpis, placerat fringilla risus. Vestibulum eget
+                    augue rhoncus, bibendum purus interdum, tincidunt odio.
+                    Maecenas at pulvinar ex. Sed urna est, malesuada vel lacinia
+                    at, aliquam non ante. Nulla volutpat eleifend malesuada.
                   </p>
                   <p>
-                    As a global trade compliance expert, Dale has worked with
-                    numerous organizations in various industries, providing them
-                    with the guidance and support needed to navigate complex
-                    regulatory requirements and mitigate risk. Dale's experience
-                    spans the entire compliance lifecycle, from developing
-                    compliance programs to implementing compliance procedures
-                    and training teams on best practices.
+                    Maecenas scelerisque porta quam, vel rhoncus eros elementum
+                    vitae. Maecenas sed lorem luctus, tempor nibh nec, suscipit
+                    lacus. Duis dictum a lorem et dictum. Praesent vel magna
+                    leo. Aenean turpis nulla, egestas ut justo id, pulvinar
+                    interdum ante. Etiam est turpis, eleifend vitae vestibulum
+                    eget, imperdiet quis eros. Etiam mauris lorem, condimentum
+                    non magna nec, scelerisque feugiat lectus. Donec tristique
+                    in enim eu elementum. Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit. Fusce in vestibulum dui, porta
+                    mollis lectus. Vestibulum a sem sed felis convallis rutrum.
+                    Sed metus risus, rutrum eget facilisis vitae, malesuada nec
+                    purus.
                   </p>
                   <p>
-                    Dale's deep understanding of global trade regulations and
-                    industry standards, combined with his ability to communicate
-                    complex concepts in simple terms, has earned him a
-                    reputation as a trusted advisor to his clients. He has a
-                    track record of delivering successful outcomes for his
-                    clients, enabling them to achieve their compliance
-                    objectives while also driving business growth.
+                    Sed odio erat, dapibus at tortor a, vestibulum porttitor
+                    nisl. Proin lacinia porttitor rhoncus. Sed eros eros, mollis
+                    sed molestie sed, lobortis a metus. In vel elementum augue.
+                    Nulla tellus ipsum, faucibus ac sodales at, faucibus eget
+                    augue. Integer quis erat fermentum, condimentum leo eu,
+                    lacinia dui. Maecenas quis metus non nisi egestas egestas.
+                    Mauris pulvinar lobortis vulputate. Mauris et auctor nisi.
+                    Quisque faucibus nisi dictum congue dictum. Quisque interdum
+                    odio non velit finibus pretium quis quis dolor.
                   </p>
                   <p>
-                    Dale's expertise covers a range of areas, including export
-                    controls, sanctions compliance, anti-bribery and corruption,
-                    customs compliance, and more. He stays up-to-date with the
-                    latest regulatory developments and industry trends, ensuring
-                    that our clients benefit from the most current and relevant
-                    advice.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Vivamus vel dapibus enim, eu tempor ex. Donec venenatis
+                    tincidunt augue quis rutrum. Quisque consectetur nunc
+                    feugiat libero faucibus, vitae viverra nisi ultrices. Cras
+                    ullamcorper est metus, eu cursus augue tincidunt vel. Donec
+                    semper maximus massa, nec congue tellus maximus vitae. Fusce
+                    pellentesque posuere nisl. Suspendisse potenti. Vestibulum
+                    metus mi, placerat a quam vitae, commodo dictum magna.
+                    Vivamus elementum aliquam nunc, id pharetra lorem convallis
+                    sit amet. Sed consequat mi ipsum, id tincidunt risus
+                    volutpat in. Mauris facilisis elit condimentum ligula
+                    dapibus, in cursus ligula commodo.
                   </p>
-                  <p>
+                  {/* <p>
                     Our consulting practice is committed to delivering
                     outstanding service to our clients, and we are proud to have
                     Dale as a key member of our team. We invite you to explore
                     our website and learn more about our services, including how
                     we can help your organization achieve its compliance
                     objectives.
-                  </p>
+                  </p> */}
                   <div className='signeture'>
-                    <h4>Doug Whitman</h4>
-                    <p>Global Stategic Trade Solusions, CEO</p>
+                    {/* <h4>Doug Whitman</h4> */}
+                    <h4>Global DynamiX</h4>
                     <span>
                       <Image src={sign} alt='' />
                     </span>

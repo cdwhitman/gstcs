@@ -18,7 +18,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <div>
       <Head>
-        <title>Global Strategic Trade Compliance Solutions</title>
+        <title>Global DynamiX</title>
       </Head>
       <Provider store={store}>
         <PersistGate loading={null} persistor={persistor}>

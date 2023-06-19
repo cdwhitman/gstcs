@@ -22,7 +22,8 @@ const Footer = (props) => {
             <div className='col col-lg-3 col-md-6 col-sm-12 col-12'>
               <div className='widget about-widget'>
                 <div className='logo widget-title'>
-                  <Image src={Logo} alt='logo' />
+                  <h1 style={{ color: 'white' }}>Global DynamiX</h1>
+                  {/* <Image src={Logo} alt='logo' /> */}
                 </div>
                 <p>
                   There are many variations of passages of Lorem Ipsum
@@ -160,13 +161,7 @@ const Footer = (props) => {
           <div className='row'>
             <div className='col col-xs-12'>
               <p className='copyright'>
-                {' '}
-                Copyright &copy; 2023 Global Strategic Trade Compliance
-                Solutions by{' '}
-                <Link onClick={ClickHandler} href='/'>
-                  wpOceans
-                </Link>
-                . All Rights Reserved.
+                Copyright &copy; 2023 Global DynamiX. All Rights Reserved.
               </p>
             </div>
           </div>
